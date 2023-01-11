@@ -1,5 +1,5 @@
 import { createTRPCReact } from "@trpc/react-query";
-import type { AppRouter } from "@acme/api";
+import type { AppRouter } from "@aksar/api";
 /**
  * A set of typesafe hooks for consuming your API.
  */
@@ -41,7 +41,7 @@ const getBaseUrl = () => {
 import React from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { httpBatchLink } from "@trpc/client";
-import { transformer } from "@acme/api/transformer";
+import { transformer } from "@aksar/api/transformer";
 import { inferRouterInputs, inferRouterOutputs } from "@trpc/server";
 
 export const TRPCProvider: React.FC<{ children: React.ReactNode }> = ({
